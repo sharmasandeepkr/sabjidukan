@@ -1,0 +1,33 @@
+<div class="row">
+	<p class="userIcon glyphicon glyphicon-user " style="text-align:center;font-size:60px;margin-left:45%;color:blue;"></p>	
+	 <p class="showName  " style="text-align:center;font-size:33px;color:red;line-height:27px;"></p>
+	 <p class="showEmail  " style="text-align:center;font-size:33px;color:red;line-height:27px;"></p>
+	 <br>
+	 <a class="selectedCity " style="text-align:center;font-size:33px;margin-left:30%;margin-top:15px;"></a>
+	 <p class="mobile" style="text-align:center;font-size:33px;color:red;line-height:27px;"></p>
+	 <p class="line1" style="text-align:center;font-size:33px;color:red;line-height:27px;"></p>
+	 <p class="line2  " style="text-align:center;font-size:33px;color:red;line-height:27px;"></p>
+	 <p class="landmark  " style="text-align:center;font-size:33px;color:red;line-height:27px;"></p>
+	 <p class="pincode  " style="text-align:center;font-size:33px;color:red;line-height:27px;"></p>
+	 
+	 <h2 class="text-success formClassLabel" style="font-size:30px;text-align:center;">Select Your City/Town/Region</h2>
+	 <form class="formClass" name="formname" onsubmit="return false">
+		<input class="inputRegion "  autocomplete="on" placeholder="Select Your City" list="availCity" name="selectRegion" style="font-size:45px;text-align:center;margin-left:21%;" oninput="selectedRegion()" >
+			<datalist id="availCity">
+				<option value="Patna,Bihar" style="font-size:30px;color:red;" >
+				<option value="Jharsuguda,Orissa" style="font-size:30px;color:red;" >
+				<option value="Tamnar,Chhatisgarh" style="font-size:30px;color:red;" >
+				<option value="" style="font-size:30px;color:red;" >
+			</datalist>		
+	</form>
+	<form class="pvtAddressForm hidden-sm hidden-xs" name="pvtAddress" onsubmit="return false" >
+		<input class="pvtAddressMobile" autofocus maxlength="10" type="number" placeholder="* Enter Your 10-digit Mobile No" style="font-size:42px;text-align:center;margin-left:21%;margin-top:5px;"  >
+		<input class="pvtAddressLine1" type="text" maxlength="42" placeholder="* Enter FlatNo/Street In Line1" style="font-size:42px;text-align:center;margin-left:21%;margin-top:5px;"  >
+		<input class="pvtAddressLine2" type="text" maxlength="42" placeholder="* Enter Locality In Line2" style="font-size:42px;text-align:center;margin-left:21%;margin-top:5px;"  >
+		<input class="pvtAddressLandmark" type="text" maxlength="42" placeholder="Enter Landmark" style="font-size:42px;text-align:center;margin-left:21%;margin-top:5px;"  >
+		<input class="pvtAddressPincode"  maxlength="6"  placeholder="* Enter Pincode" style="font-size:42px;text-align:center;margin-left:21%;margin-top:5px;"  >
+		<input class="pvtAddressSubmit btn-danger btn-lg" value="Submit" type="submit" style="font-size:42px;text-align:center;margin-left:42%;margin-top:5px;" onclick="pvtAddressSubmit()"> 		
+	</form>
+	
+</div>
+

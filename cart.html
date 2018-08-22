@@ -1,0 +1,394 @@
+<!--
+<style>
+@media screen and (max-width: 767px) {
+	.personalShoppingColName .personalShoppingColAmt .personalShoppingColAprice .personalShoppingColOprice .personalShoppingColEdit{
+		font-size: 45px;
+		
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.personalShoppingColName.personalShoppingColAmt.personalShoppingColAprice.personalShoppingColOprice.personalShoppingColEdit{
+		font-size: 60px;
+		
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+}
+@media screen and (min-width: 1200px) {
+	
+}
+</style>
+-->
+
+<!-- start of Address card-->
+<div class="row" style="border-color:white;border-style:outset;border-width:3px;margin-top:6px;background-color:antiquewhite;">
+		<button class="glyphicon glyphicon-arrow-left hidden-lg hidden-md" style="margin-left:15px;color:red;position:fixed;z-index:2;top:240px;font-size:45px;" onclick="open_home()"></button>
+		<div class="col-sm-1 col-xs-1" style="maargin-left:-6px;">
+		</div>
+		<div class="col-sm-3 col-xs-3">
+			<div class="row">
+			<p class="userIcon glyphicon glyphicon-user" style="text-align:center;font-size:60px;margin-left:5%;color:blue;margin-top:60px;width: 60px;
+  				  height: 60px;
+  				  border-radius: 100%;
+				  border: 36px solid white;
+				  
+				  display: inline-table;"></p>
+			</div>
+			<div class="row">
+				  <a  onclick="editAddress()" style="font-size:45px;margin-left:33px;">Edit</a>
+			</div>
+		</div>
+		<div class="addressCard col-sm-7 col-xs-7">
+			 <p class="showName  " style="text-align:left;font-size:33px;color:red;line-height:33px;"></p>
+			 <p class="showEmail  " style="text-align:left;font-size:33px;color:red;line-height:33px;"></p>
+			 <br>
+			
+			 <a class="selectedCity " style="text-align:left;font-size:33px;margin-top:15px;"></a>
+			 <p class="mobile" style="text-align:left;font-size:33px;color:red;line-height:33px;"></p>
+			 <p class="line1" style="text-align:left;font-size:33px;color:red;line-height:33px;"></p>
+			 <p class="line2  " style="text-align:left;font-size:33px;color:red;line-height:33px;"></p>
+			 <p class="landmark  " style="text-align:left;font-size:33px;color:red;line-height:33px;"></p>
+			 <p class="pincode  " style="text-align:left;font-size:33px;color:red;line-height:33px;"></p>
+		</div>
+		 <div class="row">
+				 <div class="contentForAddress" style="border-width:6px;color:black;"></div>    
+		 </div>
+		<div class="col-sm-1 col-xs-1" style="maargin-right:-6px;">
+		</div>	 
+</div>
+
+<!-- End of address card -->
+<!-- Start of personalShopping Details -->
+<div class="row">
+	<div class="row" style="margin-top:21px;margin-bottom:21px;">
+		<h1 class="personalShopping bg-success" style="text-align:center;">Items Puchased For Yourself</h1> 
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	<div class="personalShoppingRow row">
+		<div class=" col-sm-4 col-xs-4"><p class="personalShoppingColName"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAmt"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColAprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><p class="personalShoppingColOprice"></p></div>
+		<div class=" col-sm-2 col-xs-2"><a class="personalShoppingColEdit" onclick="editSubmittedItem()"></a></div>			
+	</div>
+	
+	
+</div>
+<!-- End of personalShopping Details -->
+<!-- Start Of Donated list-->
+<div class="donatedShopping">
+	
+</div>
+<div class="totalAndCheckout row">
+	<div class=" col-sm-4 col-xs-4"><p class="totalAndCheckoutAtotal"></p></div>
+	<div class=" col-sm-4 col-xs-4"><p class="totalAndCheckoutOtotal"></p></div>
+	<div class=" col-sm-4 col-xs-4"><button class="totalAndCheckoutCheckout btn-warning brn-lg" onclick="checkout()"></button></div>
+</div>

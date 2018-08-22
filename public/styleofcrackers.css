@@ -1,0 +1,9 @@
+canvas{
+	background-color: #000000;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+h1 {color: #fff; font-size: 86px; z-index:5; position: absolute; text-align: center;}
+span { z-index:5; position: absolute;}

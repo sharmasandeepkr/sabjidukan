@@ -1,0 +1,22 @@
+{
+  "name": "sabji-dukan",
+  "version": "1.0.0",
+  "description": "Vegetables selling ecomerce website",
+  "main": "node1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sandeep",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4",
+    "mongodb": "^2.2.31",
+    
+    "mysql2":"^1.4.2"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "sabjidukan"
+  ]
+}

@@ -1,0 +1,398 @@
+﻿
+body {
+    background-color: #f9f9f9;
+}
+	
+	
+
+		.offid{
+			    border-radius: 3px;
+			    border: 1.5px solid #51aa1b;
+			    color: #51aa1b;
+			    display: inline-block;
+			    font-size: 12px;
+			    font-weight: 800;
+			    left: 12px;
+			    line-height: 1;
+			    margin-top: 1px;
+			    padding: 3px 5px 2px;
+			    position: absolute;
+			    top: 2px;
+			    
+					}
+
+				.borderoff{
+					border-radius: 20px;
+						box-shadow: 4px 4px grey;
+						background-color: white;
+						color: green;
+				}
+
+					.add{
+						
+						/*box-shadow: 4px 4px grey;*/
+						background-color: white;
+						color: black;
+					}
+						.affix {  top: 0px;
+  					}
+					  /* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+  .glyphicon{
+    font-size:50px;
+	
+  }
+  .apriceid{
+	  font-size:30px;
+  }
+  .offid{
+	  font-size: 30px;
+  }
+  .opriceid{
+	  font-size: 30px;
+	  margin-right: 20px;
+  }
+  .name{
+	 font-size: 30px; 
+	 text-align: center;
+  }
+   
+  .qty{
+	  font-size: 30px;
+	  text-align: center;
+	  
+  }
+  .img1{
+	max-height: 210px;
+	max-width: 350px;
+	margin-left: 25%;
+}
+.glyphicon-minus-sign{
+	  margin-left: 30px;
+  }
+  .vegblock{
+	  margin-bottom: 50px;
+	  border:3px solid #2874f0;
+	  background-color:white;
+	  padding-bottom: 50px;
+      
+  }
+  .mainright{
+	  background-color: white;
+  }
+  .maincarr{
+	      background-color: white;
+		  margin-top: 20px;
+  }
+   .logopic{
+	  max-height: 330px;
+	  max-width: 330px;
+  }
+  .brandname{
+	  font-size: 50px;
+  }
+  .posterpic{
+	      max-width: 600px;
+    
+    margin-left: 183px;
+    border-width: 30px;
+    border-color: #3b6233;
+    border-style: solid;
+    margin-top: 50px;
+	margin-bottom: 50px;
+  }
+   .top2phone{
+	  max-width:60px;
+	  max-height:60px;
+  }
+  .top3cart{
+	  max-width:60px;
+	  max-height:60px;
+  }
+  .top4user{
+	  max-width:60px;
+	  max-height:60px;
+  }
+    .top5more{
+	  max-width:60px;
+	  max-height:60px;
+  }
+   
+  .nav_top_div{
+
+          position: fixed;
+
+          top: 0;
+
+          height: 200px;
+
+          z-index: 1;
+		  
+
+        }
+
+ .under_top{
+		margin-top:200px;	
+		}
+	
+   
+ 
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .glyphicon{
+    font-size:50px;
+	
+  }
+  .apriceid{
+	  font-size:30px;
+  }
+  .offid{
+	  font-size: 20px;
+  }
+  .opriceid{
+	  font-size: 30px;
+	  margin-right: 20px;
+  }
+  .name{
+	  font-size: 30px;
+	  text-align: center;
+  }
+  .add{
+	  font-size: 30px;
+	 margin-left:27%;
+  }
+  .qty{
+	  font-size: 30px;
+	  text-align: center;
+  }
+  .img1{
+	max-height: 210px;
+	max-width: 350px;
+	margin-left: 25%;
+}
+.glyphicon-minus-sign{
+	  margin-left: 30px;
+  }
+  .vegblock{
+	  margin-bottom: 50px;
+	  border:3px solid #2874f0;
+	  background-color:white;
+	  padding-bottom: 50px;
+      border-style:outset;
+  }
+  .mainright{
+	  background-color: white;
+  }
+  .maincarr{
+	      background-color: white;
+		  margin-top: 20px;
+  }
+  .logopic{
+	  max-height: 330px;
+	  max-width: 330px;
+  }
+  .brandname{
+	  font-size: 50px;
+  }
+  .posterpic{
+	      max-width: 600px;
+    
+    margin-left: 183px;
+    border-width: 30px;
+    border-color: #3b6233;
+    border-style: solid;
+    margin-top: 50px;
+	margin-bottom: 50px;
+  }
+   .top2phone{
+	  max-width:60px;
+	  max-height:60px;
+  }
+  .top3cart{
+	  max-width:60px;
+	  max-height:60px;
+  }
+  .top4user{
+	  max-width:60px;
+	  max-height:60px;
+  }
+    .top5more{
+	  max-width:60px;
+	  max-height:60px;
+  }
+ .nav_top_div{
+
+          position: fixed;
+
+          top: 0;
+
+          height: 200px;
+
+          z-index: 1;
+		  
+
+        }
+		
+ .under_top{
+		margin-top:200px;	
+		}
+		.add{
+	  margin-left:27%;
+  }
+  
+ 
+
+/* Rounded sliders */
+
+
+}
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .glyphicon{
+     font-size: 30px;
+	 
+	
+  }
+  .apriceid{
+	  font-size: 18px;
+  }
+  .offid{
+	  font-size: 12px;
+  }
+  .opriceid{
+	  font-size: 18px;
+	  margin-right: 30px;
+  }
+  .name{
+	  font-size: 18px;
+	  text-align: center;
+  }
+  .add{
+	  font-size: 20px;
+	  margin-left:23%;
+	  
+  }
+  .qty{
+	  font-size: 18px;
+	  text-align: center;
+  }
+  .img1{
+	max-height: 120px;
+	max-width: 120px;
+	margin-left: 25%;
+}
+.glyphicon-minus-sign{
+	  margin-left: 30px;
+  }
+  .vegblock{
+	  margin-bottom: 12px;
+	  border:2px solid #f9f9f9;
+	  background-color:white;
+	  padding-bottom: 12px;
+      border-style:outset;
+  }
+   .logopic{
+	  max-height: 140px;
+	  max-width: 140px;
+  }
+  .brandname{
+	  font-size: 30px;
+  }
+ .top2phone{
+	  max-width:30px;
+	  max-height:30px;
+  }
+  .top3cart{
+	  max-width:15px;
+	  max-height:15px;
+  }
+  .top4user{
+	  max-width:30px;
+	  max-height:30px;
+  }
+    .top5more{
+	  max-width:30px;
+	  max-height:30px;
+  }
+  .add{
+	  margin-left:23%;
+  }
+ 
+}
+/* large desktops and up ----------- */
+@media screen and (min-width: 1200px) {
+  .glyphicon{
+     font-size: 30px;
+	 
+  }
+  .glyphicon-minus-sign{
+	  margin-left: 30px;
+  }
+  .apriceid{
+	  font-size:18px;
+  }
+  .offid{
+	  font-size: 12px;
+  }
+  .opriceid{
+	  font-size: 18px;
+	  margin-right: 30px;
+  }
+  .name{
+	  font-size: 18px;
+	  text-align: center;
+  }
+  .add{
+	  font-size: 20px;
+	  margin-left:23%;
+	  
+  }
+  .qty{
+	  font-size: 18px;
+	  text-align: center;
+  }
+  .img1{
+	max-height: 120px;
+	max-width: 120px;
+	margin-left: 25%;
+}
+.vegblock{
+	  margin-bottom: 12px;
+	  border:2px solid #f9f9f9;
+	  background-color:white;
+	  padding-bottom: 12px;
+      border-style:outset;
+  }
+   .logopic{
+	  max-height: 140px;
+	  max-width: 140px;
+  }
+  .brandname{
+	  font-size: 30px;
+  }
+  .top2phone{
+	  max-width:30px;
+	  max-height:30px;
+  }
+  .top3cart{
+	  max-width:15px;
+	  max-height:15px;
+  }
+  .top4user{
+	  max-width:30px;
+	  max-height:30px;
+  }
+  .top5more{
+	  max-width:30px;
+	  max-height:30px;
+  }
+  .spcl_amla{
+	  margin-top: 23px;
+  }
+  .add{
+	  
+  }
+ 
+}
+

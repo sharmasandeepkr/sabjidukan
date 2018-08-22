@@ -1,0 +1,22 @@
+div.tindablock {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+}
+
+.caption1 {
+    display: block;
+    margin-left: 60px;
+
+}
+
+.scroll-area{
+  width:25%;
+ 
+  
+  
+  float:left;
+  overflow-y:scroll;
+}
+

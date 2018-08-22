@@ -1,0 +1,30 @@
+div.options > label > input {
+	visibility: hidden;
+}
+
+div.options > label {
+	display: block;
+	margin: 0 0 0 -10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 10px; 
+	height: 20px;
+	width: 150px;
+}
+
+div.options > label > img {
+	display: inline-block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height:50px;
+	width:50px;
+	background: none;
+}
+
+div.options > label > input:checked +img {  
+	background: url(http://cdn1.iconfinder.com/data/icons/onebit/PNG/onebit_34.png);
+	background-repeat: no-repeat;
+	background-position:center center;
+	background-size:30px 30px;
+}
+

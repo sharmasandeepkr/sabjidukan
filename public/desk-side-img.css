@@ -1,0 +1,169 @@
+﻿@media screen and (max-width: 767px) {
+    .side-img{
+        max-height:120px;
+        max-width:90px;
+        margin-left:30px;
+       
+    }
+    .side-img-button{
+        font-size:12px;
+        margin-left: 21px;
+        margin-top: 9px;
+
+    }
+    .side-img-button-c{
+        font-size:12px;
+        margin-left: 6px;
+        margin-top: 9px;
+        
+
+    }
+    .side-img-h1{
+        font-size:30px;
+        text-align:center;
+        color:red;
+        margin-bottom:-21px;
+    }
+    .side-img-div{
+        background-size: 90px 90px;
+        background-repeat: no-repeat;
+        margin-top:39px;
+        background-position: center;
+    }
+    .desk-nav-search{
+        padding-right: 300px;
+    }
+    .desk-side-icon{
+        margin-top:54px;
+    }
+    .signup-dropdown-name{
+        font-size: 50px;
+    }
+   
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .side-img{
+        max-height:600px;
+        max-width:396px;
+        margin-left:30px;
+       
+    }
+    .side-img-button{
+        font-size:50px;
+        margin-left: 24%;
+        margin-top: 9px;
+
+    }
+    .side-img-button-c{
+        font-size:42px;
+        margin-left: 39px;
+        margin-top: 9px;
+        
+
+    }
+    .side-img-h1{
+        font-size:30px;
+        text-align:center;
+        color:red;
+        
+    }
+    .side-img-div{
+        background-size: 90px 90px;
+        background-repeat: no-repeat;
+       
+        background-position: center;
+    }
+     .desk-nav-search{
+        padding-right: 300px;
+    }
+    .desk-side-icon{
+        margin-top:54px;
+    }
+    .dropdown-font-size{
+        font-size:48px;
+    }
+    .signup-dropdown-name{
+        font-size: 50px;
+    }
+    
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .side-img{
+        max-height:120px;
+        max-width:90px;
+        margin-left:30px;
+       
+    }
+    .side-img-button{
+        font-size:12px;
+        margin-left: 21px;
+        margin-top: 9px;
+
+    }
+    .side-img-button-c{
+        font-size:12px;
+        margin-left: 6px;
+        margin-top: 9px;
+        
+
+    }
+    .side-img-h1{
+        font-size:12px;
+        text-align:center;
+        color:red;
+    }
+    .side-img-div{
+        background-size: 90px 90px;
+        background-repeat: no-repeat;
+        margin-top:20px;
+        background-position: center;
+    }
+    .desk-side-icon{
+        margin-top:36px;
+    }
+    .dropdown-font-size{
+        font-size:18px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .side-img{
+        max-height:120px;
+        max-width:90px;
+        margin-left:30px;
+       
+    }
+    .side-img-button{
+        font-size:12px;
+        margin-left: 21px;
+        margin-top: 9px;
+
+    }
+    .side-img-button-c{
+        font-size:12px;
+        margin-left: 6px;
+        margin-top: 9px;
+        
+
+    }
+    .side-img-h1{
+        font-size:12px;
+        text-align:center;
+        color:red;
+    }
+    .side-img-div{
+        background-size: 90px 90px;
+        background-repeat: no-repeat;
+        margin-top:20px;
+        background-position: center;
+    }
+    .desk-side-icon{
+        margin-top:36px;
+    }
+    .dropdown-font-size{
+        font-size:18px;
+    }
+    .dropdown-font-size{
+        font-size:48px;
+    }
+  
+}
